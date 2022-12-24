@@ -30,6 +30,7 @@
         <script src="{{"js/auto-complete.js" | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" defer></script>
         <script src="{{"js/lunr.min.js" | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" defer></script>
         <script src="{{"js/lunr.stemmer.support.min.js" | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" defer></script>
+        <script src="{{"js/tinyseg.js" | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" defer></script>
         <script src="{{"js/lunr.multi.min.js" | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" defer></script>
         {{- range $contentlangs }}
           {{- $file := (printf "js/lunr.%s.min.js" .) }}
